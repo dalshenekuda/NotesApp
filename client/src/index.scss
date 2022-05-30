@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ece4d6;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #4b3832;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #d98462;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+Link{
+  text-decoration: none;
+}
+
+.note-list {
+  padding: 2rem;
+
+  &__title {
+
+  }
+}
+
+input {
+  border: 1px solid #8f95a5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 40px;
+  padding: 0 0.4rem;
+  width: 100%;
+}
+textarea{
+  border: 1px solid #8f95a5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 100px;
+  padding: 0 0.4rem;
+  width: 100%;
+}
+button{
+  border: 1px solid #8f95a5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 50px;
+  padding: 0 0.4rem;
+  width: 8rem;
+  background-color: coral;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+&:hover{
+  background-color: #b65d3c;
+}
+}
+.header{
+  background-color: #bb986d;
+
+  width: 100%;
+
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+  }
+}
+.link{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #573131;
+  &:hover{
+    color: #bb4d4d;
+  }
+
+}
+.add-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  width: 90%;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  &__text-message{
+    margin: 0.5rem 0;
+  }
+}
+.note{
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border:2px  #bb4d4d solid;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  max-width: 900px;
+
+  &__description{
+    max-width: 80%;
+  }
+  &__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  &__actions{
+    display: flex;
+    gap: 1rem;
+
+
+  }
+  &__completed{
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  &__action{
+    color: #573131;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+      color: #b8a2a2;
+
+    }
+  }
+}
+
+.input{
+  width: 50%;
+  &__name{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
+.note-list{
+  width: 80%;
+  &__list{
+    margin: 2rem 0;
+  }
+}
+.text-error{
+  color: red;
+}
+.text-success{
+  color: green;
+}
+
+.logo{
+  text-decoration: none;
+  font-size: 3rem;
+  color: #4b3832;
+}
+
